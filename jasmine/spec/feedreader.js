@@ -38,7 +38,6 @@ $(function() {
             }
         });
 
-
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
@@ -98,7 +97,7 @@ $(function() {
 
         it('should load at least one feed', function() {
             const feed = document.querySelector('div.feed');
-            expect(feed.children.length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
