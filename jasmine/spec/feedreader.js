@@ -97,14 +97,14 @@ $(function() {
         });
     });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+    /* This test suite tests for feed changes */
     describe('New Feed Selection', function() {
         let firstFeed = document.querySelector('div.feed');
         let secondFeed = document.querySelector('div.feed');
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+        /* This is a test that ensures when a new feed is loaded by
+         * the loadFeed function that the content actually changes.
+         * The nested callback follows the asynchronous behavior.
          */
         beforeEach(function(done) {
             loadFeed(0, function() {
