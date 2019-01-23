@@ -113,10 +113,10 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, function() {
                 firstFeed = firstFeed.innerHTML;
+                loadFeed(1, function() {
+                    secondFeed = secondFeed.innerHTML;
+                    done();
                 });
-            loadFeed(1, function() {
-                secondFeed = secondFeed.innerHTML;
-                done();
             });
         });
 
